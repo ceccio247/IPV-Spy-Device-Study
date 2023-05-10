@@ -101,3 +101,16 @@ DETECTORS_SEEDS = [
         ]
 def generate_detectors_seed_queries():
     return DETECTORS_SEEDS
+
+if __name__ == "__main__":
+        device_queries = generate_seed_queries()
+        print("Spy Device Seed Queries:")
+        for query in device_queries:
+                print(query)
+        print()
+        
+        detector_queries = generate_detectors_seed_queries()
+        print("Device Detector Seed Queries:")
+        for query in detector_queries:
+                print(query)
+        print()
